@@ -1,0 +1,16 @@
+{
+	"records":[
+		{
+			"user":"user",
+			"password":"user"
+		},
+		{
+			"user":"admin",
+			"password":"admin"
+		},
+		{
+			"user":"test",
+			"password":"test"
+		}
+	]
+}
