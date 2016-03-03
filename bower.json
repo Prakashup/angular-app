@@ -1,0 +1,21 @@
+{
+  "name": "angular-app",
+  "description": "Dummy Carpool App Version 1.0 Description: Dummy parpool App",
+  "main": "index.js",
+  "license": "ISC",
+  "homepage": "https://github.com/Prakashup/angular-app",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jasmine-core": "jasmine#^2.4.1"
+  },
+  "devDependencies": {
+    "jasmine-core": "jasmine#^2.4.1"
+  }
+}
