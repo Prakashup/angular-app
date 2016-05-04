@@ -8,25 +8,24 @@ myApp.config(function($stateProvider, $urlRouterProvider) {
   $stateProvider
 	.state('login', {
 	  url: "/login",
-	  templateUrl: "tpl/login.html",
+	  templateUrl: "views/login.html",
 	  controller : "loginCtrl"
 	  
 	})
    .state('dashboard', {
-//	  resolve:{
-//		  "ckeck" : function($location, $rootScope){
-//			  if($rootScope.isloggedIn){
-//				  $location.path("/dashboard");
-//				  alert("loggedIn");
-//			  }
-//		  }
-//	  	},
+	  resolve:{
+		  "ckeck" : function($location, $rootScope){
+			  if($rootScope.isloggedIn){
+				  $location.path("/dashboard");
+			  }
+		  }
+	  	},
 	    url: "/dashboard",
-		templateUrl: "tpl/header.html"   
+		templateUrl: "views/dashboard.html"   
 	})
    .state('dashboard.list', {
 		url: "/list",
-		templateUrl: "tpl/pool-list.html"   
+		templateUrl: "views/pool-list.html"   
 	});
   
        
